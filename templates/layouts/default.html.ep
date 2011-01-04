@@ -3,5 +3,11 @@
         <title><%= title %></title>
         <%= base_tag %>
     </head>
-    <body><%= content %></body>
+    <body>
+        <%= link_to 'Index' => 'index' %><br />
+        <%= link_to 'Login' => 'login' %><br />
+        <%= link_to 'Logout' => 'logout' %><br />
+        <%= link_to 'Customers (Login needed)' => 'customers' %><br />
+        <%= content %>
+    </body>
 </html>

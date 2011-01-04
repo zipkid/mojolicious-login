@@ -10,9 +10,6 @@
             <input value="<%= 'Login' %>" type="submit" /><br />
             <br />
         </form>
-        <%= link_to 'Index' => 'index' %><br />
-        <%= link_to 'Login' => 'login' %><br />
-        <%= link_to 'Logout' => 'logout' %><br />
-        <%= link_to 'Customers' => 'customers' %>
+
     </p>
 
