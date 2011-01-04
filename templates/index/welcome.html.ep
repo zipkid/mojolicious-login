@@ -1,0 +1,10 @@
+% layout 'default', title => 'Index';
+
+    <p>
+        <%= $message %><br />
+        <%= link_to 'Index' => 'index' %><br />
+        <%= link_to 'Login' => 'login' %><br />
+        <%= link_to 'Logout' => 'logout' %><br />
+        <%= link_to 'Customers' => 'customers' %>
+    </p>
+        

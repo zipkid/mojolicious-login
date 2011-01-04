@@ -1,0 +1,7 @@
+<!doctype html><html>
+    <head>
+        <title><%= title %></title>
+        <%= base_tag %>
+    </head>
+    <body><%= content %></body>
+</html>

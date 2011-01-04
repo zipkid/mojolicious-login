@@ -1,0 +1,18 @@
+% layout 'default', title 'Login';
+
+    <p>
+        <% if (my $message = flash 'login_error' ) { %>
+            <div class="flash"><%= $message %></div><br />
+        <% } %>
+        <form action="/login" method="post" id="loginForm">
+            <%= 'Username' %> : <input type="text" id="user" name="user" /><br />
+            <%= 'Password' %> : <input type="password" id="pass" name="pass" /><br />
+            <input value="<%= 'Login' %>" type="submit" /><br />
+            <br />
+        </form>
+        <%= link_to 'Index' => 'index' %><br />
+        <%= link_to 'Login' => 'login' %><br />
+        <%= link_to 'Logout' => 'logout' %><br />
+        <%= link_to 'Customers' => 'customers' %>
+    </p>
+
