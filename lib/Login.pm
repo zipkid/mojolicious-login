@@ -8,8 +8,10 @@ use base 'Mojolicious';
 # This method will run once at server start
 sub startup {
     my $self = shift;
+
+    $self->plugin('I18N');
    
-    $self->secret('LiETqO7aWN');
+    $self->secret('LiErTqO7arWN');
     
     # Routes
     my $r = $self->routes;

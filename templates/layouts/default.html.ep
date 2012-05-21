@@ -4,10 +4,10 @@
         <%= base_tag %>
     </head>
     <body>
-        <%= link_to 'Index' => 'index' %><br />
-        <%= link_to 'Login' => 'login' %><br />
-        <%= link_to 'Logout' => 'logout' %><br />
-        <%= link_to 'Customers (Login needed)' => 'customers' %><br />
+        <%= link_to l 'Index' => 'index' %><br />
+        <%= link_to l 'Login' => 'login' %><br />
+        <%= link_to l 'Logout' => 'logout' %><br />
+        <%= link_to customers => begin %><%=l 'Customers (Login needed)' %><% end %>
         <%= content %>
     </body>
 </html>

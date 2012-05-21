@@ -9,7 +9,7 @@ use base 'Mojolicious::Controller';
 sub welcome {
     my $c = shift;
     
-    $c->stash( message => 'Welcome to the Mojolicious Web Framework Login test!');
+    $c->stash( message => 'Welcome to the Domoz Login page!');
     
     # Render template "index/welcome.html.ep" with message
     $c->render();
